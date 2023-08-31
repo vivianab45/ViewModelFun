@@ -1,0 +1,22 @@
+
+<div class="d-flex justify-content-center">
+    <a href="/">Message</a>
+    <span>|</span>
+    <a href="/numbers">Numbers</a>
+    <span>|</span>
+    <a href="/user">User</a>
+    <span>|</span>
+    <a href="/users">Users</a>
+</div>
+
+
+@model List<User>
+
+<div class= "text-center">
+    <h1> Here is a list of Users:</h1>
+    @foreach (User u in Model)
+    {
+        //u.FirstName= instance u from the list
+        <h3>@u.FirstName @u.LastName</h3>
+    }
+</div>
